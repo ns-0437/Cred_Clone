@@ -1,0 +1,28 @@
+.mobile-menu-wrapper {
+    /* Add any necessary styles for the mobile menu wrapper here */
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Vertical alignment if needed */
+}
+
+.left-column {
+    flex: 1; /* Take up available space */
+    text-align: left; /* Align the image to the left */
+}
+
+.right-column {
+    justify-content: flex-end;
+    display: inline-flex;
+    flex: 1; /* Take up available space */
+    text-align: right; /* Align the text to the right */
+
+}
+
+.header-nav-item{
+  margin: 0% 6%;
+}
+.header-logo {
+    max-width: 100%; /* Optional: Ensure the image doesn't exceed its container */
+}

@@ -25,4 +25,13 @@
     .max-width{
         max-width: 90%;
     }
+    .none-mobile{
+        display: none !important;
+    }
 };
+
+@media all and (min-width:766px){
+    .only-moile{
+        display: none !important;
+    }
+}

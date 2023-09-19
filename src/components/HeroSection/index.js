@@ -6,7 +6,14 @@ const HeroSection = () => {
   return (
     <div className="hero-section-wrapper">
       <div className="flex absolute-center hero-claim-lable">
-        {/* <div>pay credit card bill. earn guranteed cashback ₹200</div> */}
+        <div>pay credit card bill. earn guranteed cashback ₹200</div>
+        <div className="claim-anchor">
+          claim now
+          <img 
+          src="https://github.com/ns-0437" alt="->"
+          className="claim-arrow"
+          /> 
+        </div>
       </div>
       <div className="flex absolute-center flex-col hero-section max-width">
         <div className="hero-heading">
