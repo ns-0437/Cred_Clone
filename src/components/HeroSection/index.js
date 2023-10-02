@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "../common/Button";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import './heroSection.css';
 
 const HeroSection = () => {
@@ -8,11 +10,8 @@ const HeroSection = () => {
       <div className="flex absolute-center hero-claim-lable">
         <div>pay credit card bill. earn guranteed cashback ₹200</div>
         <div className="claim-anchor">
-          claim now
-          <img 
-          src="https://github.com/ns-0437" alt="->"
-          className="claim-arrow"
-          /> 
+          claim now &nbsp;          
+          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </div>
       </div>
       <div className="flex absolute-center flex-col hero-section max-width">
