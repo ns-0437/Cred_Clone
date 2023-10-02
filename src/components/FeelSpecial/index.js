@@ -28,7 +28,7 @@ const FeelSpecial = () => {
             </div>
         </div>
     </div>
-  )
-}
+  );
+};
 
 export default FeelSpecial;

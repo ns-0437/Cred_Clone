@@ -2,14 +2,13 @@ import React, { useEffect, useState, useRef } from 'react';
 import './ProductShowcase.css';
 
 const ProductShowcase = () => {
-  const [showAnimation, setshowAnimation] = useState(false); // Changed state variable name
+  const [showAnimation, setShowAnimation] = useState(false); // Changed state variable name
 
   const ref = useRef(null);
 
   const toggleAnimation = (entries) => {
-    const entry = entries[0];
-    if (entry[0]?.isIntersecting) {
-      setshowAnimation(true);
+    if (entries[0]?.isIntersecting) {
+      setShowAnimation(true);
     }
   };
 
@@ -35,7 +34,8 @@ const ProductShowcase = () => {
 
   return (
     <div className={`product-showcase ${showAnimation ? 'scale-in-bottom' : ''}`} ref={ref}>
-      {/* { showAnimation && (  */}
+      {console.log(showAnimation)}
+      { showAnimation && ( 
       <div className='showcase-wrapper'>
             <img 
             src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/left-2.png"
@@ -58,7 +58,7 @@ const ProductShowcase = () => {
             className="showcase-ui showcase-mockup-5" alt=" "
             />
         </div>
-         {/* )} */}
+         )}
     </div>
   );
 }; 
